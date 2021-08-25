@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="221" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="ImageSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="202"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="redraw" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a6X-FP-OG3">
+                        <rect key="frame" x="10" y="10" width="360" height="182"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gpm-kS-AMI">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="182"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photographer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPU-Xu-dQO">
+                                        <rect key="frame" x="0.0" y="0.0" width="81.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Width:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-iH-7da">
+                                        <rect key="frame" x="0.0" y="41" width="37" height="36.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h9-Rk-NyB">
+                                        <rect key="frame" x="0.0" y="82.5" width="41.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID photo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ta-9p-PCs">
+                                        <rect key="frame" x="0.0" y="123.5" width="52" height="58.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="x7g-bk-bF1">
+                                <rect key="frame" x="232" y="0.0" width="128" height="182"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1ek-yB-EeG">
+                                        <rect key="frame" x="54" y="81" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7cr-z9-3Wy">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="182"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="FBN-xl-lhf"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7cr-z9-3Wy" secondAttribute="trailing" id="3td-hc-Qwp"/>
+                                    <constraint firstItem="1ek-yB-EeG" firstAttribute="centerX" secondItem="x7g-bk-bF1" secondAttribute="centerX" id="9ch-tt-xAY"/>
+                                    <constraint firstAttribute="bottom" secondItem="7cr-z9-3Wy" secondAttribute="bottom" id="SEu-VH-XBi"/>
+                                    <constraint firstItem="1ek-yB-EeG" firstAttribute="centerY" secondItem="x7g-bk-bF1" secondAttribute="centerY" id="cSt-gB-X76"/>
+                                    <constraint firstItem="7cr-z9-3Wy" firstAttribute="top" secondItem="x7g-bk-bF1" secondAttribute="top" id="nKq-c2-rfk"/>
+                                    <constraint firstItem="7cr-z9-3Wy" firstAttribute="leading" secondItem="x7g-bk-bF1" secondAttribute="leading" id="sAa-b7-etc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x7g-bk-bF1" secondAttribute="bottom" id="Ib3-zf-fsl"/>
+                            <constraint firstItem="x7g-bk-bF1" firstAttribute="top" secondItem="a6X-FP-OG3" secondAttribute="top" id="Lld-GS-Mn6"/>
+                            <constraint firstItem="x7g-bk-bF1" firstAttribute="leading" secondItem="gpm-kS-AMI" secondAttribute="trailing" id="Md5-a2-I98"/>
+                            <constraint firstAttribute="trailing" secondItem="x7g-bk-bF1" secondAttribute="trailing" id="NGn-6X-qMr"/>
+                            <constraint firstItem="gpm-kS-AMI" firstAttribute="leading" secondItem="a6X-FP-OG3" secondAttribute="leading" id="UIu-1V-vgO"/>
+                            <constraint firstItem="gpm-kS-AMI" firstAttribute="top" secondItem="a6X-FP-OG3" secondAttribute="top" id="uiu-nf-c8L"/>
+                            <constraint firstAttribute="bottom" secondItem="gpm-kS-AMI" secondAttribute="bottom" id="vnD-Vu-ZOo"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a6X-FP-OG3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Cbc-9l-piv"/>
+                    <constraint firstAttribute="bottom" secondItem="a6X-FP-OG3" secondAttribute="bottom" constant="10" id="Cdm-es-6TH"/>
+                    <constraint firstAttribute="trailing" secondItem="a6X-FP-OG3" secondAttribute="trailing" constant="10" id="ekR-5Y-zeQ"/>
+                    <constraint firstItem="a6X-FP-OG3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vVl-9y-fnY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="height" destination="0h9-Rk-NyB" id="wGV-KB-usi"/>
+                <outlet property="idPhoto" destination="0Ta-9p-PCs" id="R2I-44-v6N"/>
+                <outlet property="imagePhoto" destination="7cr-z9-3Wy" id="wUv-ld-nlT"/>
+                <outlet property="indicator" destination="1ek-yB-EeG" id="59N-0M-C4y"/>
+                <outlet property="photographer" destination="yPU-Xu-dQO" id="4aL-Ee-B6A"/>
+                <outlet property="width" destination="qfZ-iH-7da" id="A9Z-hr-aPk"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="49.553571428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
