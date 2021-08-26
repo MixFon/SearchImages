@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		stopActivitiIndicator()
+	
 		self.searchTextField.text = UserDefaults.standard.string(forKey: self.keyUD)
 		let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
 		self.tabelView.register(nib, forCellReuseIdentifier: self.identifierCell)
@@ -133,6 +134,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 		if !self.images.indices.contains(indexPath.row) { return UITableViewCell() }
 		cell.setDataPhoto(photo: photo)
 		cell.imagePhoto.image = self.images[indexPath.row]
+		cell.selectionStyle = .none
 		return cell
 	}
 	
