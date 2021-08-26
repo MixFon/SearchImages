@@ -126,8 +126,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 	
 	// Создаем ячейку и заполняем ее.
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		guard let welcom = self.welcom else { return UITableViewCell() }
+		if !welcom.photos.indices.contains(indexPath.row) { return UITableViewCell() }
 		guard let photo = self.welcom?.photos[indexPath.row] else { return UITableViewCell() }
 		guard let cell = self.tabelView.dequeueReusableCell(withIdentifier: self.identifierCell, for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
+		if !self.images.indices.contains(indexPath.row) { return UITableViewCell() }
 		cell.setDataPhoto(photo: photo)
 		cell.imagePhoto.image = self.images[indexPath.row]
 		return cell
@@ -138,6 +141,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 		guard let welcom = self.welcom else { return }
 		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		guard let showImageVC = storyboard.instantiateViewController(withIdentifier: "ShowImageID") as? ShowImageVC  else { return }
+		if !self.images.indices.contains(indexPath.row) { return }
 		showImageVC.photo = welcom.photos[indexPath.row]
 		show(showImageVC, sender: nil)
 	}
