@@ -11,7 +11,6 @@
 		298E7BA226D6037600FF8A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E7BA126D6037600FF8A2E /* SceneDelegate.swift */; };
 		298E7BA426D6037600FF8A2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E7BA326D6037600FF8A2E /* ViewController.swift */; };
 		298E7BA726D6037600FF8A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298E7BA526D6037600FF8A2E /* Main.storyboard */; };
-		298E7BAA26D6037600FF8A2E /* ImageSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 298E7BA826D6037600FF8A2E /* ImageSearch.xcdatamodeld */; };
 		298E7BAC26D6037B00FF8A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298E7BAB26D6037B00FF8A2E /* Assets.xcassets */; };
 		298E7BAF26D6037B00FF8A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298E7BAD26D6037B00FF8A2E /* LaunchScreen.storyboard */; };
 		298E7BBC26D6101300FF8A2E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E7BBB26D6101300FF8A2E /* Image.swift */; };
@@ -26,7 +25,6 @@
 		298E7BA126D6037600FF8A2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		298E7BA326D6037600FF8A2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		298E7BA626D6037600FF8A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		298E7BA926D6037600FF8A2E /* ImageSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageSearch.xcdatamodel; sourceTree = "<group>"; };
 		298E7BAB26D6037B00FF8A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		298E7BAE26D6037B00FF8A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298E7BB026D6037B00FF8A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				298E7BAB26D6037B00FF8A2E /* Assets.xcassets */,
 				298E7BAD26D6037B00FF8A2E /* LaunchScreen.storyboard */,
 				298E7BB026D6037B00FF8A2E /* Info.plist */,
-				298E7BA826D6037600FF8A2E /* ImageSearch.xcdatamodeld */,
 				298E7BBB26D6101300FF8A2E /* Image.swift */,
 				298E7BC026D62C8E00FF8A2E /* ShowImageVC.swift */,
 			);
@@ -165,7 +162,6 @@
 				298E7BC126D62C8E00FF8A2E /* ShowImageVC.swift in Sources */,
 				298E7BBC26D6101300FF8A2E /* Image.swift in Sources */,
 				298E7BC626D63A7B00FF8A2E /* CustomTableViewCell.swift in Sources */,
-				298E7BAA26D6037600FF8A2E /* ImageSearch.xcdatamodeld in Sources */,
 				298E7BA026D6037600FF8A2E /* AppDelegate.swift in Sources */,
 				298E7BA226D6037600FF8A2E /* SceneDelegate.swift in Sources */,
 			);
@@ -369,19 +365,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		298E7BA826D6037600FF8A2E /* ImageSearch.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				298E7BA926D6037600FF8A2E /* ImageSearch.xcdatamodel */,
-			);
-			currentVersion = 298E7BA926D6037600FF8A2E /* ImageSearch.xcdatamodel */;
-			path = ImageSearch.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 298E7B9426D6037600FF8A2E /* Project object */;
 }

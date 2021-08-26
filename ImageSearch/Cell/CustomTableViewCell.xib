@@ -52,9 +52,6 @@
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="x7g-bk-bF1">
                                 <rect key="frame" x="232" y="0.0" width="128" height="182"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1ek-yB-EeG">
-                                        <rect key="frame" x="54" y="81" width="20" height="20"/>
-                                    </activityIndicatorView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7cr-z9-3Wy">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="182"/>
                                         <constraints>
@@ -65,9 +62,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="7cr-z9-3Wy" secondAttribute="trailing" id="3td-hc-Qwp"/>
-                                    <constraint firstItem="1ek-yB-EeG" firstAttribute="centerX" secondItem="x7g-bk-bF1" secondAttribute="centerX" id="9ch-tt-xAY"/>
                                     <constraint firstAttribute="bottom" secondItem="7cr-z9-3Wy" secondAttribute="bottom" id="SEu-VH-XBi"/>
-                                    <constraint firstItem="1ek-yB-EeG" firstAttribute="centerY" secondItem="x7g-bk-bF1" secondAttribute="centerY" id="cSt-gB-X76"/>
                                     <constraint firstItem="7cr-z9-3Wy" firstAttribute="top" secondItem="x7g-bk-bF1" secondAttribute="top" id="nKq-c2-rfk"/>
                                     <constraint firstItem="7cr-z9-3Wy" firstAttribute="leading" secondItem="x7g-bk-bF1" secondAttribute="leading" id="sAa-b7-etc"/>
                                 </constraints>
@@ -96,7 +91,6 @@
                 <outlet property="height" destination="0h9-Rk-NyB" id="wGV-KB-usi"/>
                 <outlet property="idPhoto" destination="0Ta-9p-PCs" id="R2I-44-v6N"/>
                 <outlet property="imagePhoto" destination="7cr-z9-3Wy" id="wUv-ld-nlT"/>
-                <outlet property="indicator" destination="1ek-yB-EeG" id="59N-0M-C4y"/>
                 <outlet property="photographer" destination="yPU-Xu-dQO" id="4aL-Ee-B6A"/>
                 <outlet property="width" destination="qfZ-iH-7da" id="A9Z-hr-aPk"/>
             </connections>

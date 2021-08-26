@@ -40,6 +40,9 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="KhM-ol-2KN"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="zxK-5c-owb">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="cat" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNJ-5R-T8f">
                                 <rect key="frame" x="20" y="102" width="295" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -68,8 +71,10 @@
                             <constraint firstItem="R0F-YB-eE5" firstAttribute="top" secondItem="SRV-3A-ufH" secondAttribute="bottom" constant="10" id="M6B-Yq-T0g"/>
                             <constraint firstItem="SRV-3A-ufH" firstAttribute="leading" secondItem="eNJ-5R-T8f" secondAttribute="trailing" constant="25" id="ONS-77-n9R"/>
                             <constraint firstItem="R0F-YB-eE5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Q4F-KM-HhW"/>
+                            <constraint firstItem="zxK-5c-owb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rrp-M0-jm0"/>
                             <constraint firstItem="R0F-YB-eE5" firstAttribute="trailing" secondItem="SRV-3A-ufH" secondAttribute="trailing" id="SQS-GU-HNd"/>
                             <constraint firstItem="SRV-3A-ufH" firstAttribute="centerY" secondItem="eNJ-5R-T8f" secondAttribute="centerY" id="gH0-Xz-O2t"/>
+                            <constraint firstItem="zxK-5c-owb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="stY-c5-snD"/>
                             <constraint firstItem="R0F-YB-eE5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tiT-2N-n2F"/>
                             <constraint firstItem="R0F-YB-eE5" firstAttribute="top" secondItem="eNJ-5R-T8f" secondAttribute="bottom" constant="8" symbolic="YES" id="tiZ-hc-XFP"/>
                             <constraint firstItem="R0F-YB-eE5" firstAttribute="leading" secondItem="eNJ-5R-T8f" secondAttribute="leading" id="ziK-Ss-3o6"/>
@@ -77,6 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="dAN-DO-jul"/>
                     <connections>
+                        <outlet property="indicator" destination="zxK-5c-owb" id="Lcz-0N-7Xf"/>
                         <outlet property="searchTextField" destination="eNJ-5R-T8f" id="eup-c5-NDk"/>
                         <outlet property="tabelView" destination="R0F-YB-eE5" id="Pvy-fq-1zG"/>
                     </connections>

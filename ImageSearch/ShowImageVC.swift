@@ -22,8 +22,6 @@ class ShowImageVC: UIViewController {
         super.viewDidLoad()
 		guard let photo = self.photo else { return }
 		loadPhoto(url: photo.src.large)
-		//self.lable.text = String(photo.id)
-        // Do any additional setup after loading the view.
     }
 	
 	func updateMinZoomScaleForSize(_ size: CGSize) {

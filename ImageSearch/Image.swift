@@ -12,7 +12,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct Welcome: Decodable {
 	let page: Int
 	let perPage: Int?
 	var photos: [Photo]
@@ -29,7 +29,7 @@ struct Welcome: Codable {
 }
 
 // MARK: - Photo
-struct Photo: Codable {
+struct Photo: Decodable {
 	let id, width, height: Int
 	let url: String
 	let photographer: String
@@ -49,7 +49,7 @@ struct Photo: Codable {
 }
 
 // MARK: - Src
-struct Src: Codable {
+struct Src: Decodable {
 	let original, large2X, large, medium: String
 	let small, portrait, landscape, tiny: String
 
